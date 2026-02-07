@@ -1,5 +1,5 @@
 .header {
-  background: #272635;
+  background: #325853;
   padding: 6px 0;
   position: fixed;
   width: 100%;
@@ -46,13 +46,13 @@
 
 .nav-list-link {
   padding: 4px 8px;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
   text-transform: capitalize;
   text-align: center;
-  color: #b4baca;
+  color: rgba(245, 236, 236, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,7 @@
   &:focus,
   &:active,
   &.active {
-    color: #fff;
+    color: #ede0de;
   }
 }
 
