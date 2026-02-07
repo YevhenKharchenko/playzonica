@@ -1,21 +1,6 @@
-.faq-contact-bg-wrapper {
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/contact/contact-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto;
-
-  @include media(desktop) {
-    max-width: 1440px;
-    background-image: url(../img/contact/contact-bg-desk.png);
-  }
-}
-
 .faq-section {
   padding-top: 64px;
-  padding-bottom: 48px;
+  padding-bottom: 64px;
 
   @include media(desktop) {
     padding-top: 80px;
@@ -28,11 +13,16 @@
   }
 }
 
-.faq-title {
+.faq-title-wrapper {
   margin-bottom: 48px;
 
   @include media(desktop) {
-    margin-bottom: 64px;
+    margin-bottom: 56px;
+  }
+}
+
+.faq-title {
+  @include media(desktop) {
   }
 }
 
@@ -46,8 +36,9 @@
 }
 
 .faq-list-item {
-  border: 1px solid #c3d09b;
-  padding: 15px;
+  background: #fff;
+  border-radius: 26px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -58,14 +49,13 @@
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 862px;
+    max-width: 640px;
   }
 }
 
 .faq-top-text-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
   width: 100%;
 
   @include media(desktop) {
@@ -74,14 +64,14 @@
 
 .faq-btn-text {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #262520;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333;
   text-align: left;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -105,17 +95,19 @@
 
 .faq-bottom-text {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #585550;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #5c5c5c;
+  max-width: 279px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

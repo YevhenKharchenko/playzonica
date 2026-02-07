@@ -1,26 +1,25 @@
 .about-section {
-}
-
-.about-bg-wrapper {
+  background: #f5ecec;
   padding-top: 80px;
   padding-bottom: 64px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/about/about-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
     padding-top: 120px;
     padding-bottom: 80px;
-    max-width: 1440px;
-    background-image: url(../img/about/about-bg-desk.jpg);
   }
 }
 
 .about-container {
+  @include media(desktop) {
+  }
+}
+
+.about-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.line-icon {
   @include media(desktop) {
   }
 }
@@ -30,17 +29,46 @@
   }
 }
 
-.about-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+.about-top-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.4;
   text-align: center;
-  color: #b4baca;
+  color: #5c5c5c;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.about-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.about-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: #5c5c5c;
   margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 20px;
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
@@ -48,32 +76,10 @@
   }
 }
 
-.about-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
-  }
-}
-
-.about-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 343px;
-
-  @include media(desktop) {
-    max-width: 192px;
-  }
-}
-
 .about-img {
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
   }
 }

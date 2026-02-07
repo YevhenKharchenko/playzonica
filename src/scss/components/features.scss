@@ -8,22 +8,33 @@
   }
 }
 
-.features-bg-wrapper {
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/features/features-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
+.features-container {
   @include media(desktop) {
-    max-width: 1440px;
-    background-image: url(../img/features/features-bg-desk.jpg);
   }
 }
 
-.features-container {
+.features-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 64px;
+  }
+}
+
+.features-text-wrapper {
+  @include media(desktop) {
+    max-width: 640px;
+  }
+}
+
+.features-title-wrapper {
+  align-items: start;
+
   @include media(desktop) {
   }
 }
@@ -33,59 +44,68 @@
   }
 }
 
-.features-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+.features-list-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.4;
-  text-align: center;
-  color: #b4baca;
-  margin-bottom: 48px;
+  color: #5c5c5c;
+  margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 18px;
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 56px;
+    font-size: 20px;
   }
 }
 
 .features-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 32px;
+  gap: 8px;
+  margin-bottom: 16px;
 
   @include media(desktop) {
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
   }
 }
 
 .features-list-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 16px;
-  width: 100%;
-  max-width: 343px;
+  gap: 8px;
 
   @include media(desktop) {
-    max-width: 248px;
   }
 }
 
+.features-icon {
+  min-width: 20px;
+}
+
 .features-item-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.4;
-  text-align: center;
-  color: #fff;
+  color: #5c5c5c;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 20px;
+  }
+}
+
+.features-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #5c5c5c;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.features-img {
+  @include media(desktop) {
+    min-width: 608px;
   }
 }
